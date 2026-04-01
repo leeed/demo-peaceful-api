@@ -1,0 +1,19 @@
+{
+    "name": "leeed/peaceful-api-demo",
+    "type": "project",
+    "require": {
+        "php": "^8.2",
+        "laravel/framework": "^10.0"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "scripts": {
+        "post-autoload-dump": [
+            "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+            "@php artisan package:discover --ansi"
+        ]
+    }
+}
